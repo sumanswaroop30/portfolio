@@ -4,6 +4,64 @@
     --body-font : "Work Sans", sans-serif;
     --bs-btn-font-family : "Work Sans", sans-serif;
 }
+/* Mobile (up to 576px) */
+@media (max-width: 576px) {
+    .container {
+        padding: 15px;
+    }
+
+    .banner {
+        text-align: center;
+    }
+
+    .row > [class*="col-"] {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .portfolio-item img {
+        width: 100%;
+    }
+
+    .testimonial-card {
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+/* Tablet (up to 768px) */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .banner {
+        text-align: center;
+        font-size: smaller;
+    }
+
+    .col-lg-3, .col-lg-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .portfolio-item img {
+        margin-bottom: 20px;
+    }
+}
+
+/* Laptop/Desktop (up to 1024px) */
+@media (max-width: 1024px) {
+    .col-lg-3, .col-lg-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .banner {
+        font-size: larger;
+        padding: 20px;
+    }
+}
 
 /* fonts color */
 
